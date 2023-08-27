@@ -1,7 +1,8 @@
-export function Home(){
+import { Layout } from "../Layout/Layout";
+export function Home() {
     return (
-        <div className="bg-red-100">
+        <Layout className="bg-red-100">
             Home
-        </div>
+        </Layout>
     );
 }

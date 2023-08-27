@@ -1,7 +1,9 @@
+import { Layout } from "../Layout/Layout";
+
 export function Order() {
     return (
-        <div className="bg-red-100">
+        <Layout className="bg-red-100">
             Orders
-        </div>
+        </Layout>
     );
 }

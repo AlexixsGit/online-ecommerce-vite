@@ -1,7 +1,9 @@
+import { Layout } from "../Layout/Layout";
+
 export function Account(){
     return (
-        <div className="bg-red-100">
+        <Layout className="bg-red-100">
             Account
-        </div>
+        </Layout>
     );
 }
