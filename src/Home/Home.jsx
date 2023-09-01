@@ -14,11 +14,13 @@ export function Home() {
     return (
         <Layout className="bg-red-100">
             Home
-            {
-                items?.map((item) => (
-                    <Card key={item.id} data={item} />
-                ))
-            }
+            <div className="grid p-6 gap-16 grid-cols-4 w-full max-w-screen-lg">
+                {
+                    items?.map((item) => (
+                        <Card key={item.id} data={item} />
+                    ))
+                }
+            </div>
         </Layout>
     );
 }
