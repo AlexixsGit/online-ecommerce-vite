@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Card from "../Card/Card";
 import { Layout } from "../Layout/Layout";
+import ShoppingCart from "../ShoppingCart/ShoppingCart";
 
 export function Home() {
     const [items, setItems] = useState(null);
@@ -17,7 +17,7 @@ export function Home() {
             <div className="grid p-6 gap-16 grid-cols-4 w-full max-w-screen-lg">
                 {
                     items?.map((item) => (
-                        <Card key={item.id} data={item} />
+                        <ShoppingCart key={item.id} data={item} />
                     ))
                 }
             </div>

@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { ShoppingCartContext } from "../Context/Context"
 
-const Card = ({ data }) => {
+const ShoppingCart = ({ data }) => {
     const context = useContext(ShoppingCartContext)
     return (
         <div className="bg-white cursor-pointer w-56 h-60">
@@ -18,4 +18,4 @@ const Card = ({ data }) => {
         </div>
     )
 }
-export default Card 
+export default ShoppingCart
